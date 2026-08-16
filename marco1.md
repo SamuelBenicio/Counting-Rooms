@@ -32,7 +32,7 @@ Grafo não direcionado e não ponderado: cada célula vazia é um vértice e as 
 
 ## Instância pequena e resultado esperado
 ```text
-3 4
+4 4
 ####
 ##.#
 .#..
