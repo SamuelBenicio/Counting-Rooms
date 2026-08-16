@@ -34,15 +34,18 @@ Grafo não direcionado e não ponderado: cada célula vazia é um vértice e as 
 ```text
 3 4
 ####
-##.##
-.#..#
+##.#
+.#..
 ###.
 ```
 
 Resultado esperado:
 ```text
-3
+2
 ```
 
 ## Hipótese inicial de solução
-A ideia é transformar o mapa em um grafo em que cada célula vazia (`.`) representa um vértice e cada par de células vazias adjacentes (horizontal ou vertical) representa uma aresta.
+- Percorrer a grade célula por célula, procurando uma célula de chão ainda não visitada.
+- Ao encontrar uma, contar como uma sala nova.
+- A partir dela, visitar todos os vizinhos de chão conectados, marcando cada um como visitado, até não restar nenhum vizinho novo para visitar.
+- Continuar a varredura de onde parou, repetindo o processo até percorrer a grade inteira.
