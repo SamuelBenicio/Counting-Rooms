@@ -28,7 +28,7 @@ Cada `.` é um vértice.
 São arestas não direcionadas, sem peso e existem entre duas células transitáveis que sejam vizinhas horizontal ou verticalmente
 
 ## Tipo do grafo
-Grafo não direcionado e não ponderado: cada célula vazia é um vértice e as adjacências entre células vizinhas formam as arestas
+Grafo não direcionado, não ponderado e se ele é conexo ou não conexo depende da entrada: cada célula vazia é um vértice e as adjacências entre células vizinhas formam as arestas
 
 ## Instância pequena e resultado esperado
 ```text
@@ -43,6 +43,9 @@ Resultado esperado:
 ```text
 2
 ```
+
+![grafo](imagem_grafo.png)
+
 
 ## Hipótese inicial de solução
 - Percorrer a grade célula por célula, procurando uma célula de chão ainda não visitada.
