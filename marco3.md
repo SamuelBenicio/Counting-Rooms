@@ -35,8 +35,7 @@ adj[4]: [3]
 ## 2. Execução Manual Passo a Passo
 
 O laço de busca itera pelos vértices na ordem
-v = 0, 1, 2, 3, 4, aplicando a rotina recursiva clássica de exploração de
-Trémaux da classe `DepthFirstPaths`.
+v = 0, 1, 2, 3, 4, aplicando a rotina recursiva `DepthFirstPaths`.
 
 ### Vértice 0
 
