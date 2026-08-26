@@ -74,13 +74,6 @@ O vetor `edgeTo[]` registra o vértice que conduziu à descoberta de cada nó.
 Os tempos de descoberta e término (`d/f`) representam, respectivamente, a
 entrada e a saída de cada vértice na pilha de recursão.
 
-| Vértice | Coordenada | marked[u] | Predecessor edgeTo[u] | Descoberta d[u] | Término f[u] | Intervalo |
-| --- | --- | --- | --- | --- | --- | --- |
-| 0 | (1, 2) | `true` | NIL (raiz) | 1 | 8 | [1, 8] |
-| 2 | (2, 2) | `true` | 0 | 2 | 7 | [2, 7] |
-| 3 | (2, 3) | `true` | 2 | 3 | 6 | [3, 6] |
-| 4 | (3, 3) | `true` | 3 | 4 | 5 | [4, 5] |
-| 1 | (2, 0) | `true` | NIL (raiz) | 9 | 10 | [9, 10] |
 
 ## 4. Árvore de Busca (Floresta DFS)
 
