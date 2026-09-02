@@ -30,8 +30,18 @@ Nenhuma dessas informações extras é necessária para _contar_ salas. o result
 
 ## Escolha justificada
 
-**Pendente:**
+Vamos utilizar DFS (Depth-First Search), pois o objetivo do algoritmo é verificar a alcançabilidade dos vértices a partir de uma raiz e, consequentemente, identificar os componentes conexos do grafo.
 
-## Adaptação, integração, testes, complexidade
+Para cada sala ainda não visitada, iniciamos uma busca em profundidade. A DFS percorre todas as salas que podem ser alcançadas a partir daquela sala inicial. Quando a busca termina, todas essas salas pertencem ao mesmo componente conexo.
 
-**Pendente:**
+Assim, ao percorrer o grafo e iniciar uma nova DFS sempre que encontrarmos um vértice ainda não visitado, podemos contar quantos componentes conexos existem, o que corresponde ao número de grupos de salas conectadas.
+
+## Complexidade
+
+
+A complexidade da BFS é O(V + E), onde:
+
+V é o número de vértices do grafo;
+E é o número de arestas.
+Isso ocorre porque cada vértice é visitado no máximo uma vez e cada aresta é analisada no máximo uma vez durante a busca.
+
